@@ -36,6 +36,5 @@
                 "Aacotroneo\\Saml2\\Saml2ServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
