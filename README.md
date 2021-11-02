@@ -11,13 +11,13 @@ The aim of this library is to be as simple as possible. We won't mess with Larav
 You can install the package via composer:
 
 ```
-composer require aacotroneo/laravel-saml2
+composer require farpointsystems/laravel-saml2
 ```
 Or manually add this to your composer.json:
 
 **composer.json**
 ```json
-"aacotroneo/laravel-saml2": "*"
+"farpointsystems/laravel-saml2": "*"
 ```
 
 If you are using Laravel 5.5 and up, the service provider will automatically get registered.
@@ -32,7 +32,7 @@ For older versions of Laravel (<5.5), you have to add the service provider:
 ]
 ```
 
-Then publish the config files with `php artisan vendor:publish --provider="Aacotroneo\Saml2\Saml2ServiceProvider"`. This will add the files `app/config/saml2_settings.php` & `app/config/saml2/mytestidp1_idp_settings.php`, which you will need to customize.
+Then publish the config files with `php artisan vendor:publish --provider="Farpointsystems\Saml2\Saml2ServiceProvider"`. This will add the files `app/config/saml2_settings.php` & `app/config/saml2/mytestidp1_idp_settings.php`, which you will need to customize.
 
 The `mytestidp1_idp_settings.php` config is handled almost directly by  [OneLogin](https://github.com/onelogin/php-saml) so you should refer to that for full details, but we'll cover here what's really necessary. There are some other config about routes you may want to check, they are pretty strightforward.
 
